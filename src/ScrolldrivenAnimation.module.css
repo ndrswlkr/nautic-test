@@ -1,0 +1,25 @@
+@keyframes fly-in{
+    from{
+        opacity: 0;
+        transform: translateX(-180px);
+        background-color: orange;
+        scale: 1.5;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+        background-color: magenta;
+        scale: 1;
+    }
+}
+.flyIn{
+    animation-name: fly-in;
+    animation-timeline: view();
+    animation-range-start: 0%; 
+    animation-range-end: cover 50%; /* entry 0 cover 50%;  */
+    ;
+}
+
+.green{
+    background-color: greenyellow;
+}

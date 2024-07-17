@@ -1,0 +1,17 @@
+.settingsPopover{
+    &:popover-open{
+        /* 0. BEFORE OPEN */
+        transform: translateY(0);
+        opacity: 1;
+        @starting-style{
+            transform: translateY(90px);
+            opacity: 0;
+        }
+    }
+    transform: translateY(-150px);
+    opacity: 0;
+
+    transition: transform 1s,
+                opacity 1s,
+                display 2s allow-discrete;
+}
